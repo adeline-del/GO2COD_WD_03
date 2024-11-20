@@ -72,7 +72,6 @@ function renderHistory() {
 clearHistoryBtn.onclick = () => {
     history.length = 0; 
     localStorage.removeItem("calcHistory");
-    renderHistory(); // Re-render the history list
+    renderHistory();
 };
 
-// Existing renderHistory function ensures an empty list is displayed when history is cleared.
